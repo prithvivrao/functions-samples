@@ -4,7 +4,7 @@
   "dependencies": {
     "firebase-admin": "^4.2.1",
     "firebase-functions": "^0.5.6",
-    "google-auth-library": "^0.10.0",
-    "googleapis": "^18.0.0"
+    "google-auth-library": "^6.0.0",
+    "googleapis": "^49.0.0"
   }
 }
