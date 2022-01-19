@@ -5,9 +5,9 @@
   "dependencies": {
     "firebase-admin": "^5.0.1",
     "firebase-functions": "^0.6.0",
-    "next": "beta",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "next": "7.0.0",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0"
   },
   "private": true
 }
