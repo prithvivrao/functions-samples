@@ -3,17 +3,20 @@
   "description": "Cleanup the user data in the datastore upon account deletion",
   "dependencies": {
     "deepcopy": "^0.6.3",
-    "ejs": "^2.5.7",
-    "firebase-admin": "^4.1.1",
-    "firebase-functions": "^0.5.1",
+    "ejs": "^3.1.7",
+    "firebase-admin": "^5.4.3",
+    "firebase-functions": "^3.6.2",
     "jsep": "^0.3.0",
-    "request": "^2.81.0",
+    "request": "^2.88.0",
     "request-promise": "^4.2.1",
-    "strip-json-comments": "^2.0.1"
+    "strip-json-comments": "^2.0.1",
+    "@snyk/protect": "latest"
   },
   "scripts": {
     "test": "NODE_ENV=TEST mocha test/index_spec.js",
-    "start": "node wipeout_init.js"
+    "start": "node wipeout_init.js",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "devDependencies": {
     "chai": "<=3.5",
@@ -21,5 +24,6 @@
     "mocha": "^3.4.2",
     "sinon": "^2.3.2",
     "sinon-stub-promise": "^4.0.0"
-  }
+  },
+  "snyk": true
 }
