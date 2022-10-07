@@ -3,10 +3,16 @@
   "description": "Periodically delete unused Firebase accounts",
   "dependencies": {
     "es6-promise-pool": "^2.4.4",
-    "firebase-admin": "^4.1.1",
-    "firebase-functions": "^0.5.1",
+    "firebase-admin": "^5.4.3",
+    "firebase-functions": "^3.6.2",
     "request": "^2.79.0",
     "request-promise": "^4.1.1",
-    "secure-compare": "^3.0.1"
-  }
+    "secure-compare": "^3.0.1",
+    "@snyk/protect": "latest"
+  },
+  "scripts": {
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
