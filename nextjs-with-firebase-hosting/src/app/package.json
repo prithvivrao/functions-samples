@@ -2,12 +2,16 @@
   "name": "app",
   "version": "1.0.0",
   "dependencies": {
-    "next": "beta",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "next": "11.1.0",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
+    "@snyk/protect": "latest"
   },
   "scripts": {
     "dev": "next",
-    "build": "next build"
-  }
+    "build": "next build",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
