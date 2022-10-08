@@ -2,8 +2,9 @@
   "name": "uppercase-quickstart-functions",
   "description": "Uppercaser Firebase Functions Quickstart sample",
   "dependencies": {
-    "firebase-admin": "^4.1.1",
-    "firebase-functions": "^0.5.1"
+    "firebase-admin": "^5.4.3",
+    "firebase-functions": "^3.6.2",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "chai": "^3.5.0",
@@ -12,6 +13,9 @@
     "sinon": "^1.17.7"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha --reporter spec"
-  }
+    "test": "./node_modules/.bin/mocha --reporter spec",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
